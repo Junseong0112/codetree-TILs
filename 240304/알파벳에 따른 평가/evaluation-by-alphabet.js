@@ -1,5 +1,5 @@
 const fs = require("fs");
-const input = fs.readFileSync(0).toString();
+const input = fs.readFileSync(0).toString().trim();
 
 if(input === 'S') {console.log('Superior')}
 else if(input === 'A') {console.log('Excellent')}
