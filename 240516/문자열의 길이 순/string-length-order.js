@@ -8,4 +8,11 @@ for(let i = 1; i <= wordLength; i++){
     arr.push(input[i])
 }
 
-console.log(arr.sort((a,b) => a.length - b.length).join('\n'))
+arr = arr.sort((a, b) => {
+    if(a.length === b.length){
+        return a.localeCompare(b)
+    }
+    return a.length - b.length
+}).join('\n')
+
+console.log(arr)
