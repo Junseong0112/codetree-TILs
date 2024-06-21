@@ -39,7 +39,7 @@ const secondLowestScoreStudents = scoreArray.filter(
   (student) => student.score === secondLowestScore
 );
 
-if (secondLowestScoreStudents.length === 0 || secondLowestScoreStudents > 1) {
+if (secondLowestScoreStudents.length === 0 || secondLowestScoreStudents.length > 1) {
   console.log("Tie");
 } else {
   console.log(secondLowestScoreStudents[0].name);
